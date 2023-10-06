@@ -1,0 +1,130 @@
+@media screen and (max-width: 768px) {
+
+    header {
+        position: relative;
+    }
+
+    header .logo {
+        font-size: 2.5rem;
+    }
+
+    header .nav-wrapper {
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+    }
+
+    header .nav-container ul {
+        flex-direction: column;
+    }
+
+    #main-page {
+
+        p {
+            font-size: 1.5rem;
+        }
+    }
+
+
+    .article-wrapper {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        max-width: 800px;
+        gap: 10px;
+        /* align-self: flex-end; */
+    }
+
+
+
+    .article-wrapper:nth-child(n) {
+        align-self: center;
+        justify-content: center;
+
+        .article-body {
+            flex-direction: column;
+        }
+    }
+
+    .menu-preview .grid-container {
+        aspect-ratio: 1/1;
+        width: 80%;
+        display: grid;
+        grid-template-columns: repeat(1, minmax(50px, 100%));
+        grid-template-rows: repeat(autofit, minmax(150px, 1fr));
+        /* grid-auto-flow: row; */
+        justify-content: center;
+        align-content: center;
+        /* align-items: center; */
+        gap: 1rem;
+    }
+
+    .menu-item {
+        grid-area: auto;
+
+        .img {
+            aspect-ratio: 1/1;
+            width: 100px;
+        }
+
+    }
+
+    .aside-wrapper {
+        position: relative;
+        height: auto;
+    }
+
+    .aside-wrapper:hover {
+        height: auto;
+    }
+
+    .aside-wrapper-hidden {
+        opacity: 1;
+        display: flex;
+        transform: translateY(0px);
+    }
+
+    .aside-wrapper-show {
+        display: none;
+    }
+
+
+    .footer-wrapper {
+        flex-direction: column;
+        justify-content: space-between;
+
+        .news-letter-wrapper form {
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .separator {
+            width: 100%;
+            height: 0px;
+            min-height: 10px;
+            border-left: none;
+            border-bottom: 2px solid black;
+        }
+
+        .social-media-wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .sos-med-ul {
+            gap: 0.5rem 0;
+        }
+
+        .sos-med {
+            justify-content: center;
+        }
+
+    }
+
+
+
+}
